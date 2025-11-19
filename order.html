@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Place an order for high-quality formal shoes from Kabelo's Finest Shoes. Choose from our premium collection and have them delivered to your doorstep." />
+    <meta name="keywords" content="Order shoes, formal shoes, best shoes for men, shoes for women, Kabelo's Finest Shoes" />
+    <meta name="author" content="Kabelo's Finest Shoes" />
+    <title>Order | Kabelo's Finest Shoes</title>
+    <style>
+        /* Css style */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #f0c040;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        main p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="tel"],
+        form input[type="number"],
+        form select,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1.1em;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Place an Order</h1>
+       <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li> 
+    </ul>
+</nav>
+    </header>
+
+    <main>
+        <p>Please fill out the form below to place your order.</p>
+
+        <form id="orderForm" action="#" method="post" onsubmit="return validateForm()">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required aria-label="Enter your full name">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required aria-label="Enter your email address">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required aria-label="Enter your phone number">
+
+            <label for="product">Select Product:</label>
+            <select id="product" name="product" required aria-label="Choose a shoe">
+                <option value="">-- Choose a Shoe --</option>
+                <option value="formal-shoe-1">Formal Shoe 1</option>
+                <option value="formal-shoe-2">Formal Shoe 2</option>
+                <option value="formal-shoe-3">Formal Shoe 3</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required aria-label="Enter the quantity of shoes">
+
+            <label for="size">Shoe Size:</label>
+            <input type="text" id="size" name="size" required aria-label="Enter your shoe size">
+
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" rows="4" required aria-label="Enter your delivery address"></textarea>
+
+            <input type="submit" value="Submit Order">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kabelo's Finest Shoes. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function validateForm() {
+            // Basic form validation example
+            var name = document.getElementById("fullname").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var product = document.getElementById("product").value;
+            var quantity = document.getElementById("quantity").value;
+            var size = document.getElementById("size").value;
+            var address = document.getElementById("address").value;
+
+            if (!name || !email || !phone || !product || !quantity || !size || !address) {
+                alert("Please fill in all fields before submitting.");
+                return false; // Prevent form submission
+            }
+            return true; // Allow form submission
+        }
+    </script>
+
+</body>
+</html>

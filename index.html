@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kabelo's Finest Shoes offers high-quality, stylish, and affordable footwear for every occasion. Explore our gallery and place an order today." />
+  <meta name="keywords" content="Kabelo's Finest Shoes, formal shoes, stylish footwear, shoes for men, shoes for women, order shoes" />
+  <meta name="author" content="Kabelo's Finest Shoes" />
+  <title>Kabelo's Finest Shoes</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* RESET & BASE */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #f0c040;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2, h3 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 1.5em;
+    }
+
+    main p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    /* GALLERY */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .gallery-item {
+      text-align: center;
+      max-width: 300px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-item p {
+      margin-top: 10px;
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    /* FORMS */
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"],
+    form input[type="number"],
+    form select,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+
+    form input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1.1em;
+      cursor: pointer;
+      border-radius: 4px;
+      width: 100%;
+      transition: background-color 0.3s;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: #555;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    section {
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kabelo's Finest Shoes</h1>
+    <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li> 
+    </ul>
+</nav>
+  </header>
+
+  <main>
+
+    <!-- Home -->
+    <section id="home">
+      <h2>Welcome to Kabelo's Finest Shoes</h2>
+      <p>You will never find a place that sells shoes as strong and stylish as ours.</p>
+      <img src="images/logo.webp" alt="Featured Shoe" width="350">
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="images/formal shoe 1.webp" alt="Formal Shoe 1">
+          <p><strong>Formal Shoe 1</strong><br>R899.00</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/formal shoe 2.webp" alt="Formal Shoe 2">
+          <p><strong>Formal Shoe 2</strong><br>R1,099.00</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/formal shoe 3.jfif" alt="Formal Shoe 3">
+          <p><strong>Formal Shoe 3</strong><br>R999.00</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <h2>About Kabelo's Finest Shoes</h2>
+      <p>
+        Kabelo's Finest Shoes is a proudly local business dedicated to providing high-quality, stylish, and affordable footwear for every occasion.
+      </p>
+      <p>
+        We specialize in formal shoes for men and women, combining classic designs with modern trends.
+      </p>
+      <p>
+        Located in Johannesburg, we’re known for great customer service, pricing, and consistent quality.
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or feedback, feel free to contact us.</p>
+
+      <h3>Our Contact Details</h3>
+      <p><strong>Email:</strong> info@kabelosshoes.com</p>
+      <p><strong>Phone:</strong> +27 12 345 6789</p>
+      <p><strong>Address:</strong> 123 Shoe Street, Johannesburg</p>
+
+      <h3>Send Us a Message</h3>
+      <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required aria-label="Enter your full name">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required aria-label="Enter your email address">
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required aria-label="Enter your message"></textarea>
+
+        <input type="submit" value="Send Message">
+      </form>
+    </section>
+
+    <!-- Order -->
+    <section id="order">
+      <h2>Place an Order</h2>
+      <p>Please fill out the form below to place your order.</p>
+
+      <form action="#" method="post">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required aria-label="Enter your full name">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required aria-label="Enter your email address">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required aria-label="Enter your phone number">
+
+        <label for="product">Select Product:</label>
+        <select id="product" name="product" required aria-label="Choose a product">
+          <option value="">-- Choose a Shoe --</option>
+          <option value="formal-shoe-1">Formal Shoe 1 - R899.00</option>
+          <option value="formal-shoe-2">Formal Shoe 2 - R1,099.00</option>
+          <option value="formal-shoe-3">Formal Shoe 3 - R999.00</option>
+        </select>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required aria-label="Enter the quantity of shoes">
+
+        <label for="size">Shoe Size:</label>
+        <input type="text" id="size" name="size" required aria-label="Enter your shoe size">
+
+        <label for="address">Delivery Address:</label>
+        <textarea id="address" name="address" rows="4" required aria-label="Enter your delivery address"></textarea>
+
+        <input type="submit" value="Submit Order">
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kabelo's Finest Shoes. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

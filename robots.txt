@@ -1,0 +1,32 @@
+# robots.txt for Kabelo's Finest Shoes
+
+# Allow all robots to access all content
+User-agent: *
+Disallow: 
+
+# Disallow specific areas that are not intended to be indexed (if any)
+# For example, if you have an admin panel or a test directory you want to block, use the following:
+# Disallow: /admin/
+# Disallow: /test/
+
+# Sitemap file location
+Sitemap: https://www.kabelosshoes.com/sitemap.xml
+
+# You can also include direct links to key pages here for easy access for search engines:
+# Index page
+Allow: /index.html
+
+# Contact page
+Allow: /contact.html
+
+# Gallery page
+Allow: /gallery.html
+
+# Enquiry page
+Allow: /enquiry.html
+
+# About page
+Allow: /about.html
+
+# Order page
+Allow: /order.html

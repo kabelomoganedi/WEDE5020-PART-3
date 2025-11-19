@@ -1,4 +1,3 @@
-# WEDE5020-PART-3
 # Kabelo's Finest Shoes Website
 
 ## Description:

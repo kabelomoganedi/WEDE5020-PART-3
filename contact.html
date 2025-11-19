@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Kabelo's Finest Shoes for inquiries, product questions, or feedback. Get in touch with us for great service and quality shoes.">
+    <meta name="keywords" content="Contact, Kabelo's Finest Shoes, Email, Feedback, Order">
+    <meta name="author" content="Kabelo's Finest Shoes">
+    <title>Contact | Kabelo's Finest Shoes</title>
+    <style>
+        /* Your existing CSS styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2.2em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f0c040;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        main p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1.1em;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+       <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <main>
+        <p>If you have any questions or feedback, feel free to contact us.</p>
+
+        <h2>Our Contact Details</h2>
+        <p><strong>Email:</strong> info@kabelosshoes.com</p>
+        <p><strong>Phone:</strong> +27 12 345 6789</p>
+        <p><strong>Address:</strong> 123 Shoe Street, Johannesburg</p>
+
+        <h2>Send Us a Message</h2>
+        <form id="contactForm" action="send_email.php" method="post" onsubmit="return validateForm()">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kabelo's Finest Shoes. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript Form Validation
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            // Check if name, email, and message are not empty
+            if (name == "" || email == "" || message == "") {
+                alert("Please fill in all required fields.");
+                return false; // Prevent form submission
+            }
+            return true; // Allow form submission
+        }
+    </script>
+
+</body>
+</html>
+
